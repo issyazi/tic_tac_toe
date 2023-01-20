@@ -18,6 +18,7 @@
 </head>
 <body>
     <header>
+        <a href="start_pg.php">Главная</a>
         <div class="drop_menu">
             <button onclick="dropMenu()" class="dropbtn">профиль</button>
             <div id="myDropdown" class="dropdown-content">
