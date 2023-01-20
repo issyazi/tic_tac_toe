@@ -30,24 +30,20 @@
 </head>
 <body>
     <header>
-        <a href="index.php">Главная</a>
+        <a href="start_pg.php">Главная</a>
         <div class="drop_menu">
-            <button onclick="dropMenu()" class="dropbtn">профиль</button>
+            <button onclick="dropMenu()" class="dropbtn">account</button>
             <div id="myDropdown" class="dropdown-content">
-                <a href="profile/signIn.php">Вход</a>
-                <a href="profile/signUp.php">Регистрация</a>
+                <a href="profile/signIn.php">enter</a>
+                <a href="profile/signUp.php">registration</a>
             </div>
         </div>
     </header>
 
     <div class="content">
         <div class="container">
-            <div class="descr">
-                <h2>Добро пожаловать!</h2>
-                <p>Чтобы начать игру – войди или зарегистрируйся</p>
-            </div>
-            <button class="main_btn" onclick="window.location.href = 'profile/signUp.php';">Создать комнату</button>
-            <button class="main_btn" onclick="window.location.href = 'profile/signUp.php';">Подключиться к комнате</button>
+            <button class="main_btn" onclick="window.location.href = 'profile/signUp.php';">new room</button>
+            <button class="main_btn" onclick="window.location.href = 'profile/signUp.php';">join room</button>
         </div>
     </div>
 </body>

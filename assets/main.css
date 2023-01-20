@@ -1,5 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;900&display=swap');
+@font-face {
+	font-family: Ubuntu-Regular; 
+	src: url(/fonts/Ubuntu-Regular.ttf); 
+    font-size: 20px;
+}
 
+@font-face {
+	font-family: Ubuntu-Bold; 
+	src: url(/fonts/Ubuntu-Bold.ttf); 
+    font-size: 40px;
+}
 * {
     padding: 0;
     margin: 0;
@@ -8,7 +17,7 @@
 
 body {
     transition: 0.5s;
-    background-color: #182234;
+    background-color: black;
     height: 100%;
     font-size: 16px;
     color: white;
@@ -73,23 +82,15 @@ h4 {
             /* C O N T E N T */
 .content {
     margin-top: 100px;
-    width: 900px;
-    height: 600px;
-    background-color: #0F1521;
-    box-shadow: 0px 0px 14px rgba(15, 21, 33, 0.55);
-    border-radius: 7px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+    font-size: 20px;
+    width: 100%;
+    max-width: 1200px;
 }
 
 .container {
-    height: 400px;
+    height: 200px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
 }
 
 .err {
@@ -108,20 +109,23 @@ h4 {
 }
 
 .main_btn {
-    width: 410px;
-    height: 70px;
-    background-color: #446AB4;
+    padding: 20px;
+    color: black;
+    text-decoration: none;
     text-align: center;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    font-size: 26px;
-    font-weight: 900;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: 'Ubuntu-Bold';
+    transition: color 0.1s linear;
+    border: 3px solid #FFFFFF;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-size: 40px;  
+    margin-bottom: 20px;
+    
 }
 
 form {
-    height: 350px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -163,18 +167,22 @@ input {
 
             /* C R E A T E   R O O M */
 .rule {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 20px;
-    width: 300px;
+    color: white;
     height: 50px;
-    border: 2px solid #446AB4;
-    border-radius: 5px;
+    text-decoration: none;
+    display: flex;
+    font-family: 'Ubuntu-Bold';
+    transition: color 0.1s linear;
+    border: 3px solid #FFFFFF;
+    border-radius: 50px;
+    font-size: 20px;    
+    margin:10px;      
+    justify-content: center;
+    align-items: center;
 }
 
 .rule_descr {
-    margin: 30px 0 10px 0;
+    margin-bottom: 20px;
 }
 
             /* W A I T   R O O M */
@@ -217,34 +225,34 @@ input {
 
 
 .field_block-1 {
-    border-right: 5px solid #182234;
-    border-bottom: 5px solid #182234;
+    border-right: 5px solid white;
+    border-bottom: 5px solid white;
 }
 .field_block-2 {
-    border-bottom: 5px solid #182234;
+    border-bottom: 5px solid white;
 }
 .field_block-3 {
-    border-left: 5px solid #182234;
-    border-bottom: 5px solid #182234;
+    border-left: 5px solid white;
+    border-bottom: 5px solid white;
 }
 
 .field_block-4 {
-    border-right: 5px solid #182234;
+    border-right: 5px solid white;
 }
 .field_block-6 {
-    border-left: 5px solid #182234;
+    border-left: 5px solid white;
 }
 
 .field_block-7 {
-    border-top: 5px solid #182234;
-    border-right: 5px solid #182234;
+    border-top: 5px solid white;
+    border-right: 5px solid white;
 }
 .field_block-8 {
-    border-top: 5px solid #182234;
+    border-top: 5px solid white;
 }
 .field_block-9 {
-    border-top: 5px solid #182234;
-    border-left: 5px solid #182234;
+    border-top: 5px solid white;
+    border-left: 5px solid white;
 }
 
 .TicTac-ico {
@@ -285,30 +293,22 @@ input {
 
             /* S T A T */
 .stat_h {
-    border: 2px solid #446AB4;
-    width: 400px;
-    height: 70px;
-    font-size: 26px;
-    text-align: center;
+    font-size: 40px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    
     font-weight: 900;
     border-radius: 5px;
+    margin-bottom: 100px;
 }
 
 .stat_table {
-    width: 700px;
     text-transform: uppercase;
     font-weight: 900;
-    display: flex;
-    justify-content: space-between;
 }
 
 .stat_cont {
     height: 70px;
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
@@ -316,7 +316,9 @@ input {
 .stat_num {
     font-size: 26px;
 }
-
+.stat_label {
+    padding-right: 20px;
+}
 .adv {
     width: 800px;
     height: 180px;

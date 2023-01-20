@@ -30,24 +30,21 @@
     <header>
         <a href="start_pg.php">Главная</a>
         <div class="drop_menu">
-            <button onclick="dropMenu()" class="dropbtn">профиль</button>
+            <button onclick="dropMenu()" class="dropbtn">account</button>
             <div id="myDropdown" class="dropdown-content">
                 <p style="font-weight: 900;"><?= $_SESSION['user'] ?></p>
-                <a href="stat.php">Статистика</a>
-                <a href="../php/logout.php">Выход</a>
+                <a href="stat.php">statictic</a>
+                <a href="../php/logout.php">exit</a>
             </div>
         </div>
     </header>
 
     <div class="content">
         <div class="container">
-            <div class="descr">
-                <h2>Добро пожаловать, <?= $_SESSION['user'] ?>!</h2>
-            </div>
             <form method="post" action="../php/host_room.php" style="height: auto">
-                <button type="submit" class="main_btn">Создать комнату</button>
+                <button type="submit" class="main_btn">New room</button>
             </form>
-            <button class="main_btn" onclick="window.location.href = 'conn_room.php';">Подключиться к комнате</button>
+            <button class="main_btn" onclick="window.location.href = 'conn_room.php';">Join room</button>
         </div>
     </div>
 </body>

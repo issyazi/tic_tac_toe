@@ -20,21 +20,21 @@
     <header>
         <a href="start_pg.php">Главная</a>
         <div class="drop_menu">
-            <button onclick="dropMenu()" class="dropbtn">профиль</button>
+            <button onclick="dropMenu()" class="dropbtn">account</button>
             <div id="myDropdown" class="dropdown-content">
                 <p style="font-weight: 900;"><?= $_SESSION['user'] ?></p>
-                <a href="stat.php">Статистика</a>
-                <a href="../php/logout.php">Выход</a>
+                <a href="stat.php">statictic</a>
+                <a href="../php/logout.php">exit</a>
             </div>
         </div>
     </header>
     <div class="content" style="justify-content: flex-start;">
         <div class="container" style="height: 200px; justify-content: center;">
             <div class="block-with-code">
-                <p class="rule_descr" style="text-align: center; margin-top: 0">Код игры:</p>
+                <p class="rule_descr" style="text-align: center; margin-top: 0">Game code:</p>
                 <div class="rule code"><?= $_SESSION['room'] ?></div>
             </div>
-            <h2 style="margin-top: 20px;">Ожидание игрока</h2>
+            <h2 style="margin-top: 20px;">Waiting...</h2>
         </div>
         <div class="field" style="margin-top: 40px;">
             <div class="field-horizon">

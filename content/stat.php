@@ -40,48 +40,39 @@
     <header>
         <a href="start_pg.php">Главная</a>
         <div class="drop_menu">
-            <button onclick="dropMenu()" class="dropbtn">профиль</button>
+            <button onclick="dropMenu()" class="dropbtn">account</button>
             <div id="myDropdown" class="dropdown-content">
                 <p style="font-weight: 900;"><?= $_SESSION['user'] ?></p>
-                <a>Статистика</a>
-                <a href="../php/logout.php">Выход</a>
+                <a>statictic</a>
+                <a href="../php/logout.php">exit</a>
             </div>
         </div>
     </header>
 
     <div class="content">
         <div class="container" style="height: 600px;">
-            <div class="stat_h">Статистика</div>
+            <div class="stat_h">STATICTIC</div>
             <div class="stat_table">
                 <div class="stat_cont">
-                    <div class="stat_label">кол-во игр</div>
+                    <div class="stat_label">games</div>
                     <div class="stat_num"><?= $stats['win'] + $stats['lose'] + $stats['draw'] ?></div>
                 </div>
+                <hr>
                 <div class="stat_cont">
-                    <div class="stat_label">побед</div>
+                    <div class="stat_label">win</div>
                     <div class="stat_num"><?= $stats['win'] ?></div>
                 </div>
+                <hr>
                 <div class="stat_cont">
-                    <div class="stat_label">поражений</div>
+                    <div class="stat_label">loss</div>
                     <div class="stat_num"><?= $stats['lose'] ?></div>
                 </div>
+                <hr>
                 <div class="stat_cont">
-                    <div class="stat_label">ничьи</div>
+                    <div class="stat_label">draw</div>
                     <div class="stat_num"><?= $stats['draw'] ?></div>
                 </div>
-            </div>
-            <div class="adv">
-                <p class="adv-ph">здесь могла быть ваша реклама</p>
-                <p class="adv-examp">например:</p>
-                <div class="git-links">
-                    <div class="link_cont">
-                        <a href="https://github.com/maestrying" class="git-link" target="_blank">maestrying</a>
-                    </div>
-                    <div class="link_cont">
-                        <a href="https://github.com/lonelywh1te" class="git-link" target="_blank">lonelywh1te</a>
-                    </div>
-                </div>
-                <img src="../assets/git-ico.svg" alt="git-ico" style="width: 150px;">
+                <hr>
             </div>
         </div>
     </div>
