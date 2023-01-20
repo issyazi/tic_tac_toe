@@ -29,7 +29,7 @@
 </head>
 <body>
     <header>
-        <a href="start_pg.php">Главная</a>
+        <a>Главная</a>
         <a href="profile/signIn.php">enter</a>
         <a href="profile/signUp.php">registration</a>
     </header>

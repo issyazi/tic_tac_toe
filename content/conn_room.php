@@ -30,7 +30,7 @@
     <header>
         <a href="start_pg.php">play</a>
         <a href="stat.php">statictic</a>
-        <a href="../logout.php">exit</a>
+        <a href="../php/logout.php">exit</a>
     </header>
     <div class="content">
         <div class="container" style="height: 200px;">

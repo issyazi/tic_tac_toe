@@ -29,7 +29,7 @@
     <header>
         <a href="start_pg.php">Главная</a>
         <a href="stat.php">Статистика</a>
-        <a href="../logout.php">Выход</a>
+        <a href="../php/logout.php">Выход</a>
     </header>
     <div class="content">
         <div class="container" style="height: 200px;">

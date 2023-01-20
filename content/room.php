@@ -39,12 +39,11 @@
     <header>
         <a href="start_pg.php">play</a>
         <a href="stat.php">statictic</a>
-        <a href="../logout.php">exit</a>
+        <a href="../php/logout.php">exit</a>
     </header>
     <div class="content" style="justify-content: flex-start;">
         <div class="container" style="height: 200px; flex-direction: row; justify-content: center;">
             <div class="game_info" id="first_player" style="color: white; justify-content: flex-start;">
-                <div class="counter" id="own_score"><?= $user_score ?></div>
                 <div class="info_cont">
                     <div class="info_name" id="own_name"><?= $_SESSION['user'] ?></div>
                 </div>
@@ -53,7 +52,6 @@
                 <div class="info_cont" style="align-items: flex-end;">
                     <div class="info_name" id="enemy_name"><?= $enemy_name ?></div>
                 </div>
-                <div class="counter" id="enemy_score"><?= $enemy_score ?></div>
             </div>
         </div>
         <div class="field" style="margin-top: 40px;">
@@ -157,12 +155,6 @@
             }
 
             if (winner === role) {
-                if (role === 'tic'){
-                    document.body.style.background = 'linear-gradient(90deg, rgba(180,68,68,1) -50%, rgba(24,34,52,1) 50%)';
-                }
-                else {
-                    document.body.style.background = 'linear-gradient(90deg, rgba(68,180,160,1) -50%, rgba(24,34,52,1) 50%)';
-                }
 
                 document.getElementById('own_name').style.textDecoration = 'underline';
                 <?php
@@ -202,16 +194,6 @@
                 document.getElementById('enemy_name').style.textDecoration = 'underline';
             }
 
-            <?php
-                if(isset($_SESSION['host'])){?>
-                    document.getElementById('game_end').innerHTML = '<div onclick="restart()" style="cursor: pointer">Рестарт</div>';
-            <?php
-                }
-                else {?>
-                    document.getElementById('game_end').innerHTML = '<div>Ожидание хоста</div>';
-            <?php
-                }
-            ?>
         }
         function draw(){
             $.ajax({
@@ -283,46 +265,6 @@
             }
         }
 
-        function restart(){
-            game_end = false;
-
-            document.getElementById('game_end').innerHTML = '';
-            document.getElementById('own_name').style.textDecoration = 'none';
-            document.getElementById('enemy_name').style.textDecoration = 'none';
-            document.body.style.background = '#182234';
-
-            $.ajax({
-                url: "../php/restart_game.php",
-                type: "post"
-            })
-            role = get_role();
-            update_field();
-            timer();
-        }
-        function wait_restart(){
-            let status = $.ajax({
-                async: false,
-                url: "../php/wait_restart.php",
-                type: "post",
-                success: function (result){
-                    if (result === 'restart'){
-                        document.getElementById('game_end').innerHTML = '';
-                        document.getElementById('own_name').style.textDecoration = 'none';
-                        document.getElementById('enemy_name').style.textDecoration = 'none';
-                        role = get_role();
-                    }
-                }
-            }).responseText;
-            if (status === 'restart') {
-                game_end = false;
-                document.body.style.background = '#182234';
-                update_field();
-                timer();
-                return;
-            }
-            setTimeout(wait_restart, 300);
-        }
-
         function end() {
             game_end = true;
             $.ajax({
@@ -371,15 +313,6 @@
             })
         }
 
-        function timer(){
-            if (game_end) return;
-            $.ajax({
-                url: "../php/timer.php",
-                type: "post"
-            })
-            setTimeout(timer, 1000);
-        }
-        timer();
 
     </script>
 </body>
