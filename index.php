@@ -34,7 +34,7 @@
         <a href="profile/signUp.php">registration</a>
     </header>
 
-    <div class="content">
+    <div class="content1">
         <div class="container">
             <button class="main_btn" onclick="window.location.href = 'profile/signUp.php';">new room</button>
             <button class="main_btn" onclick="window.location.href = 'profile/signUp.php';">join room</button>

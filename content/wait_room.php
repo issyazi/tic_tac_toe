@@ -17,9 +17,9 @@
 </head>
 <body>
     <header>
-        <a href="start_pg.php">Главная</a>
-        <a href="stat.php">Статистика</a>
-        <a href="../logout.php">Выход</a>
+        <a href="start_pg.php">play</a>
+        <a href="stat.php">statictic</a>
+        <a href="../logout.php">exit</a>
     </header>
     <div class="content" style="justify-content: flex-start;">
         <div class="container" style="height: 200px; justify-content: center;">
@@ -29,21 +29,23 @@
             </div>
             <h2 style="margin-top: 20px;">Waiting...</h2>
         </div>
-        <div class="field" style="margin-top: 40px;">
-            <div class="field-horizon">
-                <div class="field_block-1"></div>
-                <div class="field_block-2"></div>
-                <div class="field_block-3"></div>
-            </div>
-            <div class="field-horizon">
-                <div class="field_block-4"></div>
-                <div class="field_block-5"></div>
-                <div class="field_block-6"></div>
-            </div>
-            <div class="field-horizon">
-                <div class="field_block-7"></div>
-                <div class="field_block-8"></div>
-                <div class="field_block-9"></div>
+        <div class="container" style="height: 200px; justify-content: center;">
+            <div class="field" style="margin-top: 40px;">
+                <div class="field-horizon">
+                    <div class="field_block-1"></div>
+                    <div class="field_block-2"></div>
+                    <div class="field_block-3"></div>
+                </div>
+                <div class="field-horizon">
+                    <div class="field_block-4"></div>
+                    <div class="field_block-5"></div>
+                    <div class="field_block-6"></div>
+                </div>
+                <div class="field-horizon">
+                    <div class="field_block-7"></div>
+                    <div class="field_block-8"></div>
+                    <div class="field_block-9"></div>
+                </div>
             </div>
         </div>
     </div>

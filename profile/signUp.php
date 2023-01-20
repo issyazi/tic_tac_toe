@@ -18,9 +18,9 @@
 </head>
 <body>
     <header>
-        <a href="../index.php">Главная</a>
-        <a href="signIn.php">Вход</a>
-        <a href="signUp.php">Регистрация</a>
+        <a href="../index.php">play</a>
+        <a href="signIn.php">enter</a>
+        <a href="signUp.php">registration</a>
     </header>
 
     <div class="content">
@@ -33,20 +33,21 @@
             ?>
             <form method="post" action="../php/register.php">
                 <div class="prof_inp">
-                    <label>Логин</label>
+                    <label>login</label>
                     <input type="text" name="login" placeholder="Введите логин" maxlength="16">
                 </div>
                 <div class="prof_inp">
-                    <label>Пароль</label>
+                    <label>password</label>
                     <input type="password" name="password" placeholder="Введите пароль" maxlength="128">
                 </div>
                 <div class="prof_inp">
-                    <label>Подтвердите пароль</label>
+                    <label>repeat password</label>
                     <input type="password" name="submit_password" placeholder="Введите пароль" maxlength="128">
                 </div>
-                <button type="submit" class="main_btn prof_btn">Зарегистрироваться</button>
+                <button type="submit" class="main_btn prof_btn">create</button>
+                <p class="call">Have account? – <a href="signIn.php">enter</a></p>
             </form>
-            <p class="call">Есть аккаунт? – <a href="signIn.php">авторизация</a></p>
+            
         </div>
     </div>
 </body>

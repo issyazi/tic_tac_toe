@@ -28,9 +28,9 @@
 </head>
 <body>
     <header>
-        <a href="start_pg.php">Главная</a>
-        <a href="stat.php">Статистика</a>
-        <a href="../logout.php">Выход</a>
+        <a href="start_pg.php">play</a>
+        <a href="stat.php">statictic</a>
+        <a href="../logout.php">exit</a>
     </header>
     <div class="content">
         <div class="container" style="height: 200px;">
@@ -40,9 +40,9 @@
                 unset($_SESSION['message']);
             }
             ?>
-            <form method="post" action="../php/join.php" style="height: 130px">
-                <input type="text" class="code_input" name='room_id' placeholder="Введите код игры" style="width: 396px; border: 2px solid #4469b483;">
-                <button type="submit" class="main_btn">Подключиться к комнате</button>
+            <form method="post" action="../php/join.php">
+                <input type="text" class="code_input" name='room_id' placeholder="Введите код игры" style="width: 396px; border: 2px solid white; margin-bottom: 10px; margin-top: 200px;">
+                <button type="submit" class="main_btn prof_btn">join</button>
             </form>
         </div>
     </div>

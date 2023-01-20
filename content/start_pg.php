@@ -27,12 +27,12 @@
 </head>
 <body>
     <header>
-        <a href="start_pg.php">Главная</a>
-        <a href="stat.php">Статистика</a>
-        <a href="../logout.php">Выход</a>
+        <a href="start_pg.php">play</a>
+        <a href="stat.php">statictic</a>
+        <a href="../logout.php">exit</a>
     </header>
 
-    <div class="content">
+    <div class="content1">
         <div class="container">
             <form method="post" action="../php/host_room.php" style="height: auto">
                 <button type="submit" class="main_btn">New room</button>
