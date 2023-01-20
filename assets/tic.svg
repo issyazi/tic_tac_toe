@@ -1,3 +1,15 @@
-<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M45 5L5 45M45 45L5 5" stroke="#B44444" stroke-width="13"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FBEB49;stroke:#ED0C0C;stroke-width:9;stroke-miterlimit:10;}
+	.st1{stroke:#ED0C0C;stroke-width:3;stroke-miterlimit:10;}
+	.st2{fill:#ED0C0C;stroke:#000000;stroke-width:3;stroke-miterlimit:10;}
+</style>
+<path class="st0" d="M45,5L5,45 M45,45L5,5"/>
+<path class="st1" d="M9.1,2.6c0.4,5.1,51.3,39.6,32.7,44.1C41.4,41.6-9.5,7.2,9.1,2.6z"/>
+<path class="st1" d="M47.1,8.7C42,9,7.5,60,2.9,41.3C8,41,42.5-10,47.1,8.7z"/>
+<rect x="21.1" y="20.7" transform="matrix(0.6241 -0.7814 0.7814 0.6241 -8.6482 26.0379)" class="st2" width="3.2" height="2.7"/>
+<rect x="26.6" y="26.5" transform="matrix(0.6241 -0.7814 0.7814 0.6241 -10.7726 32.366)" class="st2" width="3.2" height="1.8"/>
 </svg>

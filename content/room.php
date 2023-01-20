@@ -41,14 +41,14 @@
         <a href="stat.php">statictic</a>
         <a href="../php/logout.php">exit</a>
     </header>
-    <div class="content" style="justify-content: flex-start;">
-        <div class="container" style="height: 200px; flex-direction: row; justify-content: center;">
-            <div class="game_info" id="first_player" style="color: white; justify-content: flex-start;">
+    <div class = "content2">
+        <div class="container1" style="height: 200px; display: flex; justify-content: space-between">
+            <div class="game_info" id="first_player" style="color: white; width: 400px;">
                 <div class="info_cont">
-                    <div class="info_name" id="own_name"><?= $_SESSION['user'] ?></div>
+                    <div class="info_name" id="own_name" ><?= $_SESSION['user'] ?></div>
                 </div>
             </div>
-            <div class="game_info" id="second_player" style="color: white; justify-content: flex-end;">
+            <div class="game_info" id="second_player" style="color: white; ">
                 <div class="info_cont" style="align-items: flex-end;">
                     <div class="info_name" id="enemy_name"><?= $enemy_name ?></div>
                 </div>
@@ -185,15 +185,8 @@
                 ?>
             }
             else {
-                if (role === 'tic'){
-                    document.body.style.background = 'linear-gradient(270deg, rgba(68,180,160,1) -50%, rgba(24,34,52,1) 50%)';
-                }
-                else {
-                    document.body.style.background = 'linear-gradient(270deg, rgba(180,68,68,1) -50%, rgba(24,34,52,1) 50%)';
-                }
                 document.getElementById('enemy_name').style.textDecoration = 'underline';
             }
-
         }
         function draw(){
             $.ajax({
@@ -209,7 +202,7 @@
             ?>
             <?php
                 if (isset($_SESSION['host'])){?>
-                    document.getElementById('game_end').innerHTML = '<div onclick="restart()" style="cursor: pointer">Рестарт</div>';
+                    document.getElementById('game_end').innerHTML = '<div onclick="restart()" style="cursor: pointer">restart</div>';
                     game_end = false;
 
                     $.ajax({
@@ -220,7 +213,7 @@
             <?php
                 }
                 else {?>
-                document.getElementById('game_end').innerHTML = '<div>Ожидание хоста</div>';
+                document.getElementById('game_end').innerHTML = '<div>waiting</div>';
             <?php
                 }
             ?>
@@ -265,6 +258,7 @@
             }
         }
 
+        
         function end() {
             game_end = true;
             $.ajax({
@@ -281,15 +275,15 @@
                 type: "post",
                 data: $(this).serialize(),
                 success: function get(data){
-                    if (data === "tic"){
-                        $('#first_player').css('color', '#B44444');
-                        $('#second_player').css('color', '#44B4A0');
+                    // if (data === "tic"){
+                    //     $('#first_player').css('color', '#B44444');
+                    //     $('#second_player').css('color', '#44B4A0');
 
-                    }
-                    else {
-                        $('#first_player').css('color', '#44B4A0');
-                        $('#second_player').css('color', '#B44444');
-                    }
+                    // }
+                    // else {
+                    //     $('#first_player').css('color', '#44B4A0');
+                    //     $('#second_player').css('color', '#B44444');
+                    // }
                 }
             }).responseText;
         }

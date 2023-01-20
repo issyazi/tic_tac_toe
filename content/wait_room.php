@@ -21,13 +21,13 @@
         <a href="stat.php">statictic</a>
         <a href="../php/logout.php">exit</a>
     </header>
-    <div class="content" style="justify-content: flex-start;">
+    <div class="content2" style="justify-content: flex-start;">
         <div class="container" style="height: 200px; justify-content: center;">
             <div class="block-with-code">
-                <p class="rule_descr" style="text-align: center; margin-top: 0">Game code:</p>
-                <div class="rule code"><?= $_SESSION['room'] ?></div>
+                <p class="rule_descr" style="text-align: center; margin-top: 0">Game code: <?= $_SESSION['room'] ?></p>
+                
             </div>
-            <h2 style="margin-top: 20px;">Waiting...</h2>
+            <h2 style="margin: 20px;">Waiting...</h2>
         </div>
         <div class="container" style="height: 200px; justify-content: center;">
             <div class="field" style="margin-top: 40px;">

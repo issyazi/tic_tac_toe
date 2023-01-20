@@ -27,9 +27,9 @@
 </head>
 <body>
     <header>
-        <a href="start_pg.php">Главная</a>
-        <a href="stat.php">Статистика</a>
-        <a href="../php/logout.php">Выход</a>
+        <a href="start_pg.php">play</a>
+        <a href="stat.php">statictic</a>
+        <a href="../php/logout.php">exit</a>
     </header>
     <div class="content">
         <div class="container" style="height: 200px;">

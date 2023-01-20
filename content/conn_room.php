@@ -34,13 +34,14 @@
     </header>
     <div class="content">
         <div class="container" style="height: 200px;">
+            
+            <form method="post" action="../php/join.php">
             <?php
             if (isset($_SESSION['message'])){
                 echo '<p class="err">'.$_SESSION['message'].'</p>';
                 unset($_SESSION['message']);
             }
             ?>
-            <form method="post" action="../php/join.php">
                 <input type="text" class="code_input" name='room_id' placeholder="Введите код игры" style="width: 396px; border: 2px solid white; margin-bottom: 10px; margin-top: 200px;">
                 <button type="submit" class="main_btn prof_btn">join</button>
             </form>

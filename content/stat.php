@@ -37,8 +37,8 @@
 </head>
 <body>
     <header>
-        <a href="start_pg.php">play</a>
-        <a href="stat.php">statistic</a>
+        <a href="start_pg.php">Account</a>
+        <a href="stat.php">statictic</a>
         <a href="../php/logout.php">exit</a>
     </header>
     <div class="content">

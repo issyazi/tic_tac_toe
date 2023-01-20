@@ -32,10 +32,10 @@
     }
     else {
         if ($finded['guest_id'] != null){
-            $_SESSION['message'] = "Комната занята";
+            $_SESSION['message'] = "Room are full";
         }
         else {
-            $_SESSION['message'] = "Комната не найдена";
+            $_SESSION['message'] = "Room not found";
         }
 
         header("Location: ../content/conn_room.php");

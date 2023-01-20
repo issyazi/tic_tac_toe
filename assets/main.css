@@ -100,11 +100,26 @@ h4 {
     width: 100%;
     width: 400px;
 }
+.content2 {
+    margin: 100px 200px 0 200px;
+    font-size: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
 
 
 .container {
     display: flex;
     flex-direction: column;
+}
+.container1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .err {
@@ -240,34 +255,34 @@ input {
 
 
 .field_block-1 {
-    border-right: 5px solid white;
-    border-bottom: 5px solid white;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
 }
 .field_block-2 {
-    border-bottom: 5px solid white;
+    border-bottom: 2px solid white;
 }
 .field_block-3 {
-    border-left: 5px solid white;
-    border-bottom: 5px solid white;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
 }
 
 .field_block-4 {
-    border-right: 5px solid white;
+    border-right: 2px solid white;
 }
 .field_block-6 {
-    border-left: 5px solid white;
+    border-left: 2px solid white;
 }
 
 .field_block-7 {
-    border-top: 5px solid white;
-    border-right: 5px solid white;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
 }
 .field_block-8 {
-    border-top: 5px solid white;
+    border-top: 2px solid white;
 }
 .field_block-9 {
-    border-top: 5px solid white;
-    border-left: 5px solid white;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
 }
 
 .TicTac-ico {
@@ -277,9 +292,9 @@ input {
 
             /* R O O M */
 .game_info {
-    display: flex;
-    width: 400px;
     font-weight: 900;
+    display: flex;
+    align-items: center;
 }
 
 .counter {
@@ -289,9 +304,6 @@ input {
 }
 
 .info_cont {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
 }
 
 .info_name {
@@ -351,21 +363,21 @@ input {
 }
 
 .adv:hover {
-    background-color: #44B4A0;
-    color: #0F1521;
-    filter: drop-shadow(0px 0px 22px rgba(68, 180, 160, 0.35));
+    /* background-color: #44B4A0; */
+    /* color: #0F1521; */
+    /* filter: drop-shadow(0px 0px 22px rgba(68, 180, 160, 0.35)); */
 }
 
 .link_cont a {
     transition: .5s;
-    color: #44B4A0;
+    /* color: #44B4A0; */
     text-transform: lowercase;
     font-weight: 900;
     text-decoration: underline;
 }
 
 .adv:hover .link_cont a {
-    color: #0F1521;
+    /* color: #0F1521; */
 }
 
 .adv-ph {
