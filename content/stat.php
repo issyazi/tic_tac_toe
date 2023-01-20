@@ -32,23 +32,15 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tic-Tak-Toe</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/main.css">
     <script src="../scripts/dropMenu.js"></script>
 </head>
 <body>
     <header>
         <a href="start_pg.php">Главная</a>
-        <div class="drop_menu">
-            <button onclick="dropMenu()" class="dropbtn">account</button>
-            <div id="myDropdown" class="dropdown-content">
-                <p style="font-weight: 900;"><?= $_SESSION['user'] ?></p>
-                <a>statictic</a>
-                <a href="../php/logout.php">exit</a>
-            </div>
-        </div>
+        <a href="stat.php">Статистика</a>
+        <a href="../logout.php">Выход</a>
     </header>
-
     <div class="content">
         <div class="container" style="height: 600px;">
             <div class="stat_h">STATICTIC</div>
